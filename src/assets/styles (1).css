@@ -1,0 +1,263 @@
+/* =============================================
+   CSS VARIABLES & RESET
+   ============================================= */
+:root {
+  --clr-bg: #f8f7f4;
+  --clr-white: #ffffff;
+  --clr-black: #0d0d0d;
+  --clr-accent: #e63946;
+  --clr-accent-hover: #c1121f;
+  --clr-text: #1a1a1a;
+  --clr-muted: #6b6b6b;
+  --clr-border: #e0ddd8;
+  --clr-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --clr-shadow-md: 0 6px 20px rgba(0, 0, 0, 0.1);
+  --clr-shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.14);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  --transition: 0.25s ease;
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+/* =============================================
+   NAVBAR
+   ============================================= */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 16px 40px;
+  background: var(--clr-white);
+  border-bottom: 1px solid var(--clr-border);
+  box-shadow: var(--clr-shadow-sm);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--clr-text);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  transition: color var(--transition);
+}
+
+.navbar a:hover {
+  color: var(--clr-accent);
+}
+
+/* =============================================
+   SECTION & CONTAINER
+   ============================================= */
+.section {
+  padding: 80px 20px;
+  background: var(--clr-bg);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =============================================
+   TITRE
+   ============================================= */
+.section h2 {
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--clr-text);
+  margin-bottom: 48px;
+  letter-spacing: -0.02em;
+}
+
+/* =============================================
+   GRID PRODUITS
+   ============================================= */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+}
+
+/* =============================================
+   CARD PRODUIT
+   ============================================= */
+.category {
+  background: var(--clr-white);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  text-align: center;
+  border: 1px solid var(--clr-border);
+  box-shadow: var(--clr-shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition);
+  overflow: hidden;
+}
+
+.category:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--clr-shadow-lg);
+}
+
+/* Image */
+.category img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  margin-bottom: 16px;
+  transition: transform var(--transition);
+}
+
+.category:hover img {
+  transform: scale(1.03);
+}
+
+/* Nom produit */
+.category p {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--clr-text);
+  margin: 4px 0;
+}
+
+/* Prix */
+.price {
+  font-family: var(--font-body);
+  color: var(--clr-accent);
+  font-weight: 700;
+  font-size: 18px;
+  margin: 10px 0 16px;
+}
+
+/* Bouton */
+.add-to-cart-btn {
+  background: var(--clr-black);
+  color: var(--clr-white);
+  padding: 10px 22px;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  transition: background var(--transition), transform var(--transition);
+}
+
+.add-to-cart-btn:hover {
+  background: var(--clr-accent);
+  transform: scale(1.03);
+}
+
+.add-to-cart-btn:active {
+  transform: scale(0.98);
+}
+
+/* =============================================
+   COMPOSANT .amet (bannière / mise en avant)
+   ============================================= */
+.amet {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 24px;
+  border: 2px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--clr-shadow-md);
+  padding: 32px;
+  background: var(--clr-white);
+  overflow: hidden;
+}
+
+.amet img {
+  width: 30%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+}
+
+/* =============================================
+   COMPOSANT .sit (bloc texte centré)
+   ============================================= */
+.sit {
+  text-align: center;
+  padding: 32px;
+  font-family: var(--font-body);
+  color: var(--clr-text);
+}
+
+/* =============================================
+   COMPOSANT .dolor (conteneur centré)
+   ============================================= */
+.dolor {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* =============================================
+   COMPOSANT .In (flex row centré)
+   ============================================= */
+.In {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+}
+
+/* =============================================
+   COMPOSANT .sal (bannière colorée)
+   ============================================= */
+.sal {
+  background-color: var(--clr-accent);
+  color: var(--clr-white);
+  padding: 40px 32px;
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+}
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+@media (max-width: 768px) {
+  .section {
+    padding: 48px 16px;
+  }
+
+  .section h2 {
+    font-size: 26px;
+    margin-bottom: 32px;
+  }
+
+  .category img {
+    height: 180px;
+  }
+
+  .amet {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .amet img {
+    width: 70%;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 12px 20px;
+  }
+
+  .dolor {
+    max-width: 100%;
+    padding: 0 16px;
+  }
+}
