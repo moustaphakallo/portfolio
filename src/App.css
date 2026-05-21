@@ -1,8 +1,9 @@
 /* Navbar principale */
  body{
     padding-top: 100px;
+    
  }.navbar {
-   position: fixed; 
+   /* position: fixed;  */
   
    height: 70px;
   top: 0;
@@ -89,6 +90,8 @@
     font-size: 16px;
   }
 }
+
+
 .hero {
   height: 100vh;
   display: flex;
@@ -107,6 +110,7 @@
   color: white;
   text-align: center;
   padding: 20px;
+ 
 
 }
 .hero-content h1{
@@ -129,7 +133,90 @@
   max-width: 700px;
   margin-top: 80px;
 }
+/* 📱 RESPONSIVE MOBILE */
+@media (max-width: 768px) {
 
+  .CSS1{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+    
+    padding: 10px;
+  }
+
+  .container{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .GitHub{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .GitHub img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+
+  .JavaScript{
+    margin-left: 0 !important;
+    padding-top: 10px !important;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .skills{
+    width: 100% !important;
+    height: 40px !important;
+    margin-top: 15px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* 📱 TITRES */
+  div[style*="font-size:67px"]{
+    flex-direction: column !important;
+    font-size: 35px !important;
+    text-align: center;
+    gap: 0;
+  }
+}
+/* 📱 Responsive (mobile) */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container-GitHub {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    gap: 15px;
+  }
+
+  .container-JavaScript {
+    font-size: 16px;
+  }
+}
 .hero h1 {
   font-size: 40px;
   margin-bottom: 10px;
@@ -166,8 +253,14 @@
   opacity: 10;
 }
 .Kallo img{
-  width: 70%;
+  width: 79%;
   height: 100%;
+}
+.Kallo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .animated-text {
   font-size: 28px;
@@ -232,6 +325,7 @@
 /* CONTAINER */
 
 .container {
+  overflow: hidden;
   position: relative;
   max-width: 1100px;
   margin: auto;
@@ -1327,6 +1421,14 @@ margin-left: 270px;
 @media (max-width: 640px) {
   .skills-grid { grid-template-columns: 1fr; }
 }
+/* @media (max-width: 640px) {
+  .Àpropos1-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 641px) and (max-width: 900px) {
+  .Àpropos1-grid{ grid-template-columns: repeat(2, 1fr); }
+} */
 .Àpropos1{
   display: block;
   flex-direction: column;
@@ -1335,7 +1437,7 @@ margin-left: 270px;
   justify-content: center;
 background-color: rgba(7, 15, 51, 0.753);
 color: white;
-margin-top: 50px;
+/* margin-top: 50px; */
 
 }
 /* CONTAINER */

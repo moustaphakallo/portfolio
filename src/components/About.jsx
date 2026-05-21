@@ -1,3 +1,5 @@
+
+<link rel="icon" href="/favicon.ico" />
 export default function About() {
   return (
     <>
@@ -49,8 +51,8 @@ export default function About() {
           <span style={{ color: "white" }}>JavaScript</span>
         </div>
       </div>
-    </div>
-    <div className="skill-card">
+      </div>
+      <div className="skill-card">
       <h2>Frameworks</h2>
       <div className="skill-items">
         <div className="skill-item">
@@ -62,9 +64,9 @@ export default function About() {
           <span style={{ color: "white" }}>Tailwind CSS</span>
         </div>
       </div>
-    </div>
+      </div>
 
-    <div className="skill-card">
+      <div className="skill-card">
       <h2>Outils</h2>
       <div className="skill-items">
         <div className="skill-item">
@@ -80,22 +82,22 @@ export default function About() {
           <span style={{ color: "white" }}>VS Code</span>
         </div>
       </div>
-    </div>
+      </div>
 
-  </div>
-</div>
+      </div>
+      </div>
      </div>
      {/* la so;utions 2 */}
- <div style={{ display: "flex", gap: "5px",textAlign:"center",justifyContent:"center",alignItems:"center", fontSize:"67px"}}>
-  <span style={{ color: "red" }}>Web</span>
-  <span style={{ color: "yellowgreen", padding: "2px 6px", borderRadius: "5px" }}>
+    <div style={{ display: "flex", gap: "5px",textAlign:"center",justifyContent:"center",alignItems:"center", fontSize:"67px"}}>
+    <span style={{ color: "red" }}>Web</span>
+    <span style={{ color: "yellowgreen", padding: "2px 6px", borderRadius: "5px" }}>
     Fundamen
-  </span>
-  <span style={{color:"blue"}}>
+    </span>
+    <span style={{color:"blue"}}>
     tals
-  </span>
+    </span>
 </div>
-    <section className="CSS1">
+ <section className="CSS1">
      
 <div className="container">
    
@@ -124,19 +126,10 @@ export default function About() {
     <img src="https://cdn3d.iconscout.com/3d/free/preview/free-javascript-3d-icon-png-download-7577991.png?f=webp&h=700" alt="" />
   <p  className="JavaScript"  style={{ marginLeft: "100px" ,paddingTop:"70px" }}>JavaScript</p>
   </span>
-  <div className="skills js"  style={{width:"350px",height:"100%",backgroundColor:" rgb(46, 22, 6)"}}>65%</div>
+  <div className="skills js"  style={{width:"200px",height:"50%",backgroundColor:" rgb(46, 22, 6)"}}>65%</div>
 </div>
 
 
-<div className="container">
-  <span className="GitHub">
-
-  <img src="https://www.freepnglogos.com/uploads/php-logo-png/php-logo-php-elephant-logo-vectors-download-5.png" alt="" />
-   <p  className="JavaScript"  style={{ marginLeft: "100px" ,paddingTop:"70px" }}>PHP</p>
-  </span>
- 
-  <div className="skills php"style={{width:"350px",height:"100%",backgroundColor:" rgb(46, 6, 39)"}}>60%</div>
-</div>
 
 
     </section>

@@ -89,6 +89,7 @@ export default function Contact() {
         {`
         body{
           background: rgba(1, 7, 15, 0.93)
+          ov
         }
           * {
             margin: 0;
@@ -328,7 +329,7 @@ export default function Contact() {
       </style>
 
       {/* CONTACT SECTION */}
-      <section className="contact-section">
+      <section className="contact-section" style={{ overflow: "hidden" }}>
         <div className="contact-left">
           <p>Contact</p>
           <h2>Travaillons <span style={{ color: '#605a99' }}>ensemble</span></h2>
@@ -382,7 +383,7 @@ export default function Contact() {
       </section>
 
       {/* SLIDER SECTION */}
-      <section style={{ marginTop: '80px' }}>
+      <section style={{ marginTop: '80px',overflow: "hidden" }}>
         <h2 style={{ textAlign: 'center', marginBottom: '40px', fontSize: '2rem' }}>
           Nos <span style={{ color: '#6366f1' }}>Services</span>
         </h2>
